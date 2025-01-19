@@ -1,5 +1,5 @@
 /******************************************************************************
- * File: lab-0.cpp
+ * File: banking_system.cpp
  * 
  * Object-Oriented Financial System
  * Implementation of a financial system
