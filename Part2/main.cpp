@@ -1,3 +1,13 @@
+/******************************************************************************
+ * File: banking_system.cpp
+ * 
+ * Object-Oriented Financial System
+ * Implementation of a financial system
+ * 
+ * CSCE 313: Intro to Computer Systems
+ * Spring 2025
+ *****************************************************************************/
+
 #include <iostream>
 #include "types.h"
 
