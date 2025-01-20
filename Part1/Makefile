@@ -5,10 +5,10 @@ CXX = g++
 CXXFLAGS = -std=c++17 -g
 
 # Source files
-SRC = lab-0.cpp bank.cpp
+SRC = main.cpp bank.cpp
 
 # Executable name
-EXEC = lab-0
+EXEC = banking_system
 
 # Rule to build the executable (no intermediate .o files)
 $(EXEC): $(SRC)

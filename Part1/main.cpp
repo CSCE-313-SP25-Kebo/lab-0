@@ -1,5 +1,5 @@
 /******************************************************************************
- * File: banking_system.cpp
+ * File: main.cpp
  * 
  * Object-Oriented Financial System
  * Implementation of a financial system
@@ -8,7 +8,7 @@
  * Spring 2025
  *****************************************************************************/
 
-#include "lab-0.h"
+#include "types.h"
 #include <iostream>
 #include <string>
 #include <fstream>

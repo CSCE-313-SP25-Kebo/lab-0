@@ -1,4 +1,4 @@
-#include "lab-0.h"
+#include "types.h"
 
 // Constructor definition
 Bank::Bank() : current_account(nullptr) {}

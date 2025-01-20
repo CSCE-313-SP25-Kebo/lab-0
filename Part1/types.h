@@ -1,5 +1,5 @@
-#ifndef _LAB_0_H_
-#define _LAB_0_H_
+#ifndef _TYPES_H_
+#define _TYPES_H_
 
 const int MAX_ACCOUNTS = 10;
 
