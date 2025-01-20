@@ -2,6 +2,7 @@
 #define TYPES_H
 
 #include <cstring>
+#include <stdexcept>
 
 const int MAX_ACCOUNTS = 10000000;
 const int MAX_TRANSACTIONS = 2;
@@ -27,6 +28,7 @@ public:
         balance = 0;
         active = false;
         transactionCount = 0;
+        transactions = nullptr;
     }
     
     Account(int i): id(i) {
@@ -52,26 +54,25 @@ public:
         // Task 4: Memory leak - no deallocation
     }
 
-    // Copy constructor
     Account(const Account& other) {
         id = other.id;
         balance = other.balance;
         active = other.active;
         transactionCount = other.transactionCount;
-        transactions = new Transaction[MAX_TRANSACTIONS];
+        // Task 1: Missing transactions array initialization
+        transactions = nullptr;
     }
 
-    // Copy assignment operator
     Account& operator=(const Account& other) {
         if (this != &other) {
-            delete[] transactions;  // Clean up existing transactions
+            delete[] transactions; 
             
             id = other.id;
             balance = other.balance;
             active = other.active;
             transactionCount = other.transactionCount;
-            
-            transactions = new Transaction[MAX_TRANSACTIONS];
+            // Task 1: Missing transactions array initialization
+            transactions = nullptr;
         }
         return *this;
     }
