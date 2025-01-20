@@ -8,7 +8,7 @@ CXXFLAGS = -std=c++17 -g
 SRC = main.cpp bank.cpp
 
 # Executable name
-EXEC = banking_system
+EXEC = banking-system
 
 # Rule to build the executable (no intermediate .o files)
 $(EXEC): $(SRC)
