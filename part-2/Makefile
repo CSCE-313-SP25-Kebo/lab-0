@@ -31,4 +31,8 @@ run: $(TARGET)
 debug: $(TARGET)
 	gdb ./$(TARGET)
 
+# Log a debug section
+debug-log:
+	script -c "pwd; bash" -B part2.log
+
 .PHONY: all clean run debug
